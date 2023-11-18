@@ -8,6 +8,7 @@
     font-family: 'Roboto', sans-serif;
 }
 
+
 .logo{ 
     font-size: 1.7rem;
     font-weight: 800;
@@ -45,11 +46,12 @@
     position: sticky;
     top: 0;
     box-shadow: 0 1px 2px gainsboro;
+    background-color: white;
 }
 
 .image{
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpr6F6BXyCKKfM1NzWtr7G4z3-gQ3K5aNqDg&usqp=CAU);
-    height: 30rem;
+    background-image: url(https://images.unsplash.com/photo-1614713899518-7ec14c1a3f00?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRyaW5rJTIwd2F0ZXJ8ZW58MHwwfDB8fHww);
+    height: 25rem;
     width: 100vw;
     background-size: cover;
     display: flex;
@@ -67,7 +69,7 @@
     font-size: larger;
     text-align: center;
     width: 50rem;
-    margin: 2rem auto;
+    margin: 1rem auto;
 }
 
 .about-content h3{
@@ -81,10 +83,10 @@
 
 .about-content-section{
     font-size: x-large;
-    margin-top: 15rem;
+    margin-top: 4rem;
     width: 50rem;
     padding: 2rem;
-    background-color: beige;
+    background-color:#74ccf4;
     color: black;
     border-radius: 20px;
 }
@@ -102,3 +104,16 @@
     opacity: 1;
     transform: translateY(0);
   }
+
+  .footer p{
+    text-align: center;
+}
+
+.footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#help{
+    opacity: 0.7;
+    margin-top: 0.1rem;
+}
