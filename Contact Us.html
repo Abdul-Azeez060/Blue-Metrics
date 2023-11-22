@@ -24,7 +24,7 @@
                   <a class="nav-link " aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Search</a>
+                  <a class="nav-link" href="Search.html">Search</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link active" href="Contact Us.html">Contact Us</a>
@@ -81,31 +81,38 @@
             <div class="input-water-details">
                 <fieldset border="1">
                     <legend>Type of Water Body:</legend>
-                     <input type="checkbox" id="river" name="type-water">
-                     <label for="river">River</label>
-                     <br>
-                     <input type="checkbox" id="lake" name="type-water">
-                     <label for="lake">Lake</label>
-                     <br>
-                     <input type="checkbox" id="pond" name="type-water">
-                     <label for="pond">Pond</label>
-                     <br>
-                     <input type="checkbox" id="Other" name="type-water">
-                     <label for="Other">Other</label>
-                     <br>
-                     <label for="story">Provide a Brief Story About the Water Body:</label>
-                     <br>
-                     <textarea name="story" id="story" cols="80" rows="5"></textarea>
-                     
+                    <label for="river">
+                        <input type="radio" id="river" name="water" value="river">
+                        River
+                    </label>
+                    <br>
+                    <label for="lake">
+                        <input type="radio" id="lake" name="water" value="lake">
+                        Lake
+                    </label>
+                    <br>
+                    <label for="pond">
+                        <input type="radio" id="pond" name="water" value="pond">
+                        Pond
+                    </label>
+                    <br>
+                    <label for="other">
+                        <input type="radio" id="Other" name="water" value="other">
+                        Other
+                    </label>
+                    <br>
+                    <label for="story">Provide a Brief Story About the Water Body:</label>
+                    <br>
+                    <textarea name="story" id="story" cols="80" rows="5"></textarea>
                 </fieldset>
                
             </div>
 
-
+            <button type="button" class="btn btn-success">Submit</button>
         </div>
         
             
-
+       
         </form>
     </div>
     <div class="why-report">
@@ -120,7 +127,10 @@
     </div>
 
 
-   
+    <div class="footer">
+        <p style="text-align: center">Made with &#9829</p>
+        <p id="help">Help us by adding more rivers,lakes,ponds info by connecting with us</p>
+      </div>
     
 </body>
 </html>

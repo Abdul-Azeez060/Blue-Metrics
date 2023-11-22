@@ -84,8 +84,8 @@
 }
 .report-details img:hover{
    
-   width: 110%; position: relative;
-    right: 2rem;
+   width: 105%; position: relative;
+    right: 1rem;
 }
 
 
@@ -137,6 +137,10 @@ form label{
     margin: 0.5rem auto;
 }
 
+input[type=checkbox]{
+    margin-right: 0.4rem;
+}
+
 #story{
     width: 100%;
 }
@@ -157,4 +161,14 @@ form label{
         width: 90%;
     }
 }
+@media (min-width:1695px){
+    form{
+        height: 100%;
+    }
+}
+.footer p{
+    text-align: center;
+}
+
+
 
