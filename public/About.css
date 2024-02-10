@@ -1,0 +1,133 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  /* font-family: 'Kay Pho Du', serif; */
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+#logo-blue {
+  color: #339af0;
+  font-size: 25px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: gray;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  border-radius: 30px;
+  box-shadow: 0px 0px 1px #339af0;
+}
+.bg-pill {
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.bg-pill:hover {
+  opacity: 0.8;
+}
+
+.navbar {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 0.4rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 2px gainsboro;
+  background-color: white;
+}
+
+.image {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyG3zEYope__TehY3pK6VHgzAKit3cxiEG96WfZSE6yk9RhdgZnSdOQMm3sxcGG-y46ds&usqp=CAU);
+  height: 25rem;
+  width: 100vw;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  opacity: 0.9;
+}
+
+.image h1 {
+  font-weight: 900;
+  color: white;
+  font-size: 5rem;
+  margin-top: 1rem;
+}
+
+.about-content {
+  font-size: larger;
+  /* text-align: center; */
+  width: 50rem;
+  /* margin: 1rem auto; */
+}
+
+.about-content h3 {
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+}
+
+.about-content p {
+  font-family: "Lato", sans-serif;
+}
+
+.about-content-section {
+  font-size: x-large;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  width: 50rem;
+  padding: 2rem;
+  color: black;
+  border-radius: 20px;
+  background-color: #74ccf4;
+}
+
+/* Initially hide the sections */
+.about-content-section {
+  opacity: 0;
+  transform: translateY(
+    12rem
+  ); /* You can adjust this value for a different animation effect */
+  transition: opacity 0.3s ease, transform 0.5s ease;
+}
+
+/* Class to reveal the sections */
+.about-content-section.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer p {
+  text-align: center;
+}
+
+.footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+}
+
+#help {
+  opacity: 0.7;
+  margin-top: 0.1rem;
+}
+
+.black {
+  background-color: black;
+  width: 100vw;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.white {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}

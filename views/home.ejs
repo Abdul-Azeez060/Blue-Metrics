@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Metrics</title>
+  <link rel="icon" href="icons8-drop-ios-16-glyph-96.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du&family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kay+Pho+Du&family=Montserrat:wght@300;400;500;600;700&family=Roboto&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    ul {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    .footer-section {
+      background: rgba(82, 152, 233, 0.3);
+      position: relative;
+      margin-top: 350px;
+      /* position: fixed; */
+    }
+
+    .footer-cta {
+      border-bottom: 1px solid #373636;
+    }
+
+    .single-cta i {
+      color: #ff5e14;
+      font-size: 30px;
+      float: left;
+      margin-top: 8px;
+    }
+
+    .cta-text {
+      padding-left: 15px;
+      display: inline-block;
+    }
+
+    .cta-text h4 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .cta-text span {
+      color: #757575;
+      font-size: 15px;
+    }
+
+    .footer-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .footer-pattern img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 330px;
+      background-size: cover;
+      background-position: 100% 100%;
+    }
+
+    .footer-logo {
+      margin-bottom: 30px;
+    }
+
+    .footer-logo img {
+      max-width: 200px;
+    }
+
+    .footer-text p {
+      margin-bottom: 14px;
+      font-size: 14px;
+      color: #7e7e7e;
+      line-height: 28px;
+    }
+
+    .footer-social-icon span {
+      color: #fff;
+      display: block;
+      font-size: 20px;
+      font-weight: 700;
+      font-family: 'Poppins', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    .footer-social-icon a {
+      color: #fff;
+      font-size: 16px;
+      margin-right: 15px;
+    }
+
+    .footer-social-icon i {
+      height: 40px;
+      width: 40px;
+      text-align: center;
+      line-height: 38px;
+      border-radius: 50%;
+    }
+
+    .facebook-bg {
+      background: #3B5998;
+    }
+
+    .twitter-bg {
+      background: #55ACEE;
+    }
+
+    .google-bg {
+      background: #DD4B39;
+    }
+
+    .footer-widget-heading h3 {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 40px;
+      position: relative;
+    }
+
+    .footer-widget-heading h3::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      height: 2px;
+      width: 50px;
+      background: #ff5e14;
+    }
+
+    .footer-widget ul li {
+      display: inline-block;
+      float: left;
+      width: 50%;
+      margin-bottom: 12px;
+    }
+
+    .footer-widget ul li a:hover {
+      color: #ff5e14;
+    }
+
+    .footer-widget ul li a {
+      color: #878787;
+      text-transform: capitalize;
+    }
+
+    .subscribe-form {
+      position: relative;
+      overflow: hidden;
+    }
+
+    .subscribe-form input {
+      width: 100%;
+      padding: 14px 28px;
+      background: #2E2E2E;
+      border: 1px solid #2E2E2E;
+      color: #fff;
+    }
+
+    .subscribe-form button {
+      position: absolute;
+      right: 0;
+      background: #ff5e14;
+      padding: 13px 20px;
+      border: 1px solid #ff5e14;
+      top: 0;
+    }
+
+    .subscribe-form button i {
+      color: #fff;
+      font-size: 22px;
+      transform: rotate(-6deg);
+    }
+
+    .copyright-area {
+      background: #202020;
+      padding: 25px 0;
+    }
+
+    .copyright-text p {
+      margin: 0;
+      font-size: 14px;
+      color: #878787;
+    }
+
+    .copyright-text p a {
+      color: #ff5e14;
+    }
+
+    .footer-menu li {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .footer-menu li:hover a {
+      color: #ff5e14;
+    }
+
+    .footer-menu li a {
+      font-size: 14px;
+      color: #878787;
+    }
+
+    /*  */
+  </style>
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: false,
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        multilanguagePage: true
+      }, 'google_translate_element');
+    }
+  </script>
+   <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+</head>
+
+<body>
+  <div id="google_translate_element"></div>
+  <div class="main">
+    <div class="navbar">
+      <div class="logo"> <span id="logo-blue">Blue</span> Metrics</div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="http://localhost:8080/home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:8080/search">Search</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:8080/news" aria-disabled="true">News Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:8080/contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link bg-pill" href="http://localhost:8080/new">Login</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="content">
+    <h1 class="heading"><span class="heading-light"></span> <span class="heading-blue">Wellness begins with </span><span
+        class="heading-light">clean water </span> </h1>
+    <div class="search-bar-center">
+      <div class="text-animation">
+        <h2>Save <span class="animate"></span></h2>
+      </div>
+      <p>Find Your Water Haven</p>
+    </div>
+    <div class="sdg-card">
+      <img src="sdg6img.png" alt="sdg">
+      <div class="sdg-details">
+        <p><b> Billions of people</b> still lack access to <span style="color:rgb(77, 157, 188);"> safe water</span>,
+          sanitation, and hygiene, despite improvement in the provision of these basic services. Water scarcity is a
+          growing problem in many parts of the world, and conflicts and climate change are exacerbating the issue. In
+          addition, water pollution is a significant challenge which affects both human health and the environment in
+          many countries. Achieving universal coverage by 2030 will require a 6-fold increase in current global rates of
+          progress on drinking water, a 5-fold increase for sanitation, and an 8-fold increase for hygiene. Boosting
+          infrastructure investment, improving cross-sectoral coordination, and addressing climate change is key to
+          getting SDG6 back on track.</p>
+      </div>
+    </div>
+    <div class="articles">
+      <div class="card">
+        <img src="UN016418.jpg" class="card-img-top" alt="...">
+
+        <div class="card-body">
+          <h4 style="margin-bottom: 0.1rem; color: blue;"> <a
+              href="https://water.org/our-impact/where-we-work/india/">UNICEF</a>
+          </h4>
+          <p class="card-text">It is estimated that waterborne diseases have an economic burden of approximately USD 600
+            million a year in India.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="Waterorg_Our-Impact_India_Img-1RV5.format-webp.webp" class="card-img-top" alt="...">
+
+        <div class="card-body">
+          <h4 style="margin-bottom: 0.1rem;"> <a
+              href="https://www.unicef.org/india/what-we-do/clean-drinking-water">WATER.ORG</a></h4>
+          <p class="card-text">Out of its population of 1.3 billion people, 91 million people (6% of the population)
+            lack access to safe water.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="images copy 2.jpeg" class="card-img-top" alt="...">
+
+        <div class="card-body">
+          <h4 style="margin-bottom: 0.1rem;"> <a
+              href="https://www.unicef.org/india/what-we-do/clean-drinking-water">UNICEF</a></h4>
+          <p class="card-text">Only 4 percent of its water resources, making it among the most water-stressed in the
+            world.</p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <a href="https://www.google.com/maps/place/Vishnu+Institute+of+Technology/@16.5659653,81.5225125,15z/data=!4m6!3m5!1s0x3a37cd4e8d1d1d8d:0xab52da15615ac690!8m2!3d16.5659653!4d81.5225125!16s%2Fm%2F09gldj9?entry=ttu"
+                  target="_blank"><i class="fas fa-map-marker-alt"></i></a>
+                <div class="cta-text">
+                  <h4 style="color: blue;">Find us</h4>
+                  <span style="color: black;">Vishnu Institute of Technology,Bhimavaram</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4 style="color: blue;">Call us</h4>
+                  <span style="color: black;">8309466413</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4 style="color: blue;">Mail us</h4>
+                  <span style="color: black;">abdulazeez@info.com</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-text">
+                  <p style="color: black;">
+
+                    Welcome to our website! We're dedicated to providing you with the best experience possible. Explore
+                    our services, browse our products, and don't hesitate to reach out if you have any questions. We're
+                    here to help you every step of the way.</p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3 style="color: blue;">Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Expert Team</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3 style="color: blue;">Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p style="color: black;">Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address">
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Made with &#9829 by Blue Metrics Team</p>
+                <p>Copyright &copy; 2024, All Right Reserved - Spy Gamers</a></p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Terms</a></li>
+                  <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Policy</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  </div>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    var typed = new Typed('.animate', {
+      strings: ['Water', 'Life', 'the World'],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    }); 
+  </script>
+   
+
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Kay Pho Du", serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+#logo-blue {
+  color: #339af0;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: gray;
+}
+
+.active {
+  color: #339af0;
+}
+
+.nav-link:hover {
+  font-weight: 700;
+  border-radius: 30px;
+  box-shadow: 0px 0px 1px #339af0;
+}
+.bg-pill {
+  background-color: black;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+}
+.bg-pill:hover {
+  opacity: 0.8;
+}
+
+.navbar {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  margin-top: 0.4rem;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 1px 2px gainsboro;
+  background-color: white;
+  z-index: 100;
+}
+
+.contact-body {
+  background-color: #eeebea;
+  padding: 2rem;
+}
+
+.report-details {
+  width: 50%;
+  padding: 1rem;
+}
+
+.report-details h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.report-details p {
+  font-family: "Lato", sans-serif;
+  opacity: 0.8;
+}
+
+.report-details img {
+  width: 97%;
+  border-radius: 10px;
+  margin-bottom: 2.5rem;
+  box-shadow: 1px 1px 4px black;
+  transition: 85ms linear;
+}
+.report-details img:hover {
+  transform: scale(1.09);
+  transition: all 1s ease;
+  position: relative;
+  
+}
+
+.contact-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+form {
+  background-color: white;
+  padding: 1rem;
+  width: 40rem;
+}
+
+form h2 {
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+form label {
+  font-weight: 500;
+}
+
+.input-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-details input {
+  width: 100%;
+  border: none;
+  box-shadow: 0px 0px 1px black;
+  border-radius: 10px;
+}
+
+.input-details {
+  margin: 0.5rem auto;
+}
+
+.input-water-details input {
+  border: none;
+  box-shadow: 0px 0px 1px black;
+  border-radius: 10px;
+}
+.input-water-details {
+  margin: 0.5rem auto;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.4rem;
+}
+
+#story {
+  width: 100%;
+}
+
+.why-report {
+  text-align: center;
+  width: 80%;
+  background-color: beige;
+  padding: 2rem;
+  margin: 1rem auto;
+}
+
+@media (max-width: 700px) {
+  form {
+    width: 90%;
+  }
+  .report-details {
+    width: 90%;
+  }
+}
+@media (min-width: 1695px) {
+  form {
+    height: 100%;
+  }
+}
+.footer p {
+  text-align: center;
+}
