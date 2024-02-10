@@ -150,6 +150,6 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     database: 'BlueMetics',
-    password: '7989332944a'
+    password: 'abcd'
   });
 
